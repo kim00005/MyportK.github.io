@@ -1,0 +1,12 @@
+.container {
+  position: relative; /* ทำให้ container เป็นจุดอ้างอิงสำหรับ element */
+  height: 200px; /* กำหนดความสูงของ container */
+  border: 1px solid black; /* เส้นขอบเพื่อแสดงขอบเขตของ container */
+}
+
+.element {
+  position: absolute; /* ทำให้ element สามารถกำหนดตำแหน่งได้ */
+  right: 0; /* ชิดขวา */
+  top: 50%; /* จัดกึ่งกลางในแนวตั้ง */
+  transform: translateY(-50%); /* ชดเชยการเลื่อนขึ้นครึ่งหนึ่งของความสูง element */
+}
