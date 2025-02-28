@@ -11,13 +11,3 @@
   transform: translateY(-50%); /* ชดเชยการเลื่อนขึ้นครึ่งหนึ่งของความสูง element */
 }
 
-.profile-photo {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%; /* ทำให้รูปภาพเป็นวงกลม */
-  object-fit: cover; /* จัดให้รูปภาพเต็มกรอบ */
-}
-
-.bio {
-  margin-top: 20px;
-}
