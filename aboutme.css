@@ -29,8 +29,11 @@ h1 {
 
 .profile-container {
   display: flex;
-  gap: 30px;
+  gap: 80px; /* เพิ่มระยะห่างระหว่างรูปและข้อความ */
   align-items: flex-start;
+  justify-content: center; /* จัดให้อยู่ตรงกลาง */
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .profile-photo {
@@ -41,10 +44,11 @@ h1 {
 
 .bio {
   flex: 1;
+  max-width: 600px; /* กำหนดความกว้างสูงสุดของข้อความ */
 }
 
 .bio p {
-  margin-bottom: 150px;
+  margin-bottom: 15px;
   line-height: 1.6;
 }
 
@@ -56,7 +60,7 @@ h1 {
 .bio li {
   margin-bottom: 8px;
   list-style-type: disc;
-  color: #ffffff;
+  color: #fff;
 }
 
 .bio li::marker {
@@ -67,14 +71,10 @@ h1 {
   .profile-container {
       flex-direction: column;
       align-items: center;
+      gap: 30px;
   }
   
   .profile-photo {
       margin-bottom: 20px;
   }
-}
-
-.dark-mode {
-  background-color: #000000;
-  color: #ffffff;
 }
