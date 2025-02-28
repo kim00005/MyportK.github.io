@@ -1,0 +1,80 @@
+togglebody {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        
+        .light-mode {
+            background-color: #ffffff;
+            color: #333333;
+        }
+        
+        .dark-mode {
+            background-color: #222222;
+            color: #f0f0f0;
+        }
+        
+        .light-mode .sidebar {
+            background-color: #e9da5d; /* สีเหลืองสำหรับโหมดสว่าง */
+        }
+        
+        .dark-mode .sidebar {
+            background-color: #8a2be2; /* สีม่วงสำหรับโหมดมืด */
+        }
+
+        .content {
+            padding: 30px;
+            text-align: center;
+            margin-top: 60px;
+        }
+        
+        .toggle-container {
+            position: fixed;
+            top: 15px;
+            right: 15px;
+            display: flex;
+            align-items: center;
+            z-index: 1000;
+        }
+        
+        .toggle-label {
+            margin: 0 5px;
+            font-size: 12px;
+            display: none; /* ซ่อนป้ายกำกับเพื่อประหยัดพื้นที่ */
+        }
+        
+        .toggle-btn {
+            position: relative;
+            width: 48px;
+            height: 24px;
+            border-radius: 12px;
+            background-color: #ddd;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        
+        .toggle-btn.dark {
+            background-color: #444;
+        }
+        
+        .toggle-slider {
+            position: absolute;
+            left: 3px;
+            top: 3px;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background-color: white;
+            transition: transform 0.3s, background-color 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 10px;
+        }
+        
+        .toggle-btn.dark .toggle-slider {
+            transform: translateX(24px);
+            background-color: #333;
+        }

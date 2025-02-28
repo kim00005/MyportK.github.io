@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="th">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MyPortfolio</title>
+        <link rel="stylesheet" href="table.css">
+        <link rel="stylesheet" href="toggle.css">
+    </head>
+    <body class="light-mode">
+        <!-- ปุ่มสลับโหมดตรงมุมขวาบน -->
+        <div class="toggle-container">
+            <span class="toggle-label">สว่าง</span>
+            <div class="toggle-btn" id="toggleBtn">
+                <div class="toggle-slider" id="toggleSlider">☀️</div>
+            </div>
+            <span class="toggle-label">มืด</span>
+        </div>
+
+        <!-- Horizontal navbar instead of sidebar -->
+        <div class="navbar">
+            <ul class="menu-items">
+                <li class="menu-item">
+                    <a href="#" onclick="changePage('about')">ประวัติส่วนตัว</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#" onclick="changePage('education')">ประวัติการศึกษา</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#" onclick="changePage('portfolio')">ผลงาน</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#" onclick="changePage('certificate')">ใบประกาศนียบัตร</a>
+                </li>
+            </ul>
+        </div>
+    
+        <div class="main-content">
+            <!-- About Page -->
+            <div id="about" class="page active">
+                <h1>ประวัติส่วนตัว</h1>
+                <p>ยินดีต้อนรับสู่เว็บไซต์ของเรา นี่คือหน้าประวัติส่วนตัว</p>
+            </div>
+            
+            <!-- Education Page -->
+            <div id="education" class="page">
+                <h1>ประวัติการศึกษา</h1>
+                <p>นี่คือส่วนแสดงประวัติการศึกษา</p>
+            </div>
+            
+            <!-- Portfolio Page -->
+            <div id="portfolio" class="page">
+                <h1>ผลงาน</h1>
+                <p>นี่คือส่วนแสดงผลงานและโครงการต่างๆ ที่เราได้ทำ</p>
+                <div style="margin-top: 20px;">
+                    <div style="background-color: #fff; padding: 20px; margin-bottom: 15px; border-radius: 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+                        <h3>โครงการที่ 1</h3>
+                        <p>รายละเอียดของโครงการที่ 1 ของเรา</p>
+                    </div>
+                    <div style="background-color: #fff; padding: 20px; margin-bottom: 15px; border-radius: 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+                        <h3>โครงการที่ 2</h3>
+                        <p>รายละเอียดของโครงการที่ 2 ของเรา</p>
+                    </div>
+                    <div style="background-color: #fff; padding: 20px; border-radius: 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+                        <h3>โครงการที่ 3</h3>
+                        <p>รายละเอียดของโครงการที่ 3 ของเรา</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Certificate Page -->
+            <div id="certificate" class="page">
+                <h1>ใบประกาศนียบัตร</h1>
+                <p>นี่คือส่วนแสดงใบประกาศนียบัตรต่างๆ</p>
+            </div>
+        </div>
+        
+        <script src="manu.js"></script>
+        <script src="toggle.js"></script>
+    </body>
+</html>
