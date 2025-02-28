@@ -56,7 +56,7 @@ h1 {
 .bio li {
   margin-bottom: 8px;
   list-style-type: disc;
-  color: #000000;
+  color: #ffffff;
 }
 
 .bio li::marker {
@@ -72,4 +72,9 @@ h1 {
   .profile-photo {
       margin-bottom: 20px;
   }
+}
+
+.light-mode {
+  background-color: #ffffff;
+  color: #333333;
 }
