@@ -1,13 +1,44 @@
-.container {
-  position: relative; /* ทำให้ container เป็นจุดอ้างอิงสำหรับ element */
-  height: 200px; /* กำหนดความสูงของ container */
-  border: 1px solid black; /* เส้นขอบเพื่อแสดงขอบเขตของ container */
+#about {
+  font-family: sans-serif;
+  line-height: 1.6;
+  padding: 20px;
 }
 
-.element {
-  position: absolute; /* ทำให้ element สามารถกำหนดตำแหน่งได้ */
-  right: 0; /* ชิดขวา */
-  top: 50%; /* จัดกึ่งกลางในแนวตั้ง */
-  transform: translateY(-50%); /* ชดเชยการเลื่อนขึ้นครึ่งหนึ่งของความสูง element */
+#about h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
+.profile-container {
+  display: flex; /* ใช้ flexbox เพื่อจัดวางรูปภาพและเนื้อหา */
+  align-items: center; /* จัดให้รูปภาพและเนื้อหาอยู่กึ่งกลางในแนวตั้ง */
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px; /* เพิ่มระยะห่างระหว่างรูปภาพและเนื้อหา */
+}
+
+.bio {
+  flex: 1; /* ให้เนื้อหาขยายเต็มพื้นที่ที่เหลือ */
+}
+
+.bio p {
+  margin-bottom: 15px;
+}
+
+.bio ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+
+.bio li {
+  margin-bottom: 5px;
+}
