@@ -49,12 +49,12 @@ h1 {
 }
 
 .bio ul {
-  margin: 20px 0;
+  margin: 200px 0;
   padding-left: 20px;
 }
 
 .bio li {
-  margin-bottom: 80px;
+  margin-bottom: 8px;
   list-style-type: disc;
   color: #ffffff;
 }
@@ -74,7 +74,7 @@ h1 {
   }
 }
 
-.light-mode {
-  background-color: #ffffff;
-  color: #333333;
+.dark-mode {
+  background-color: #000000;
+  color: #ffffff;
 }
